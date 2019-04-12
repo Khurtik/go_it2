@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    margin: 0 auto;
+    padding-top: 77px;
+    padding-bottom: 103px;
+    font-family: 'Playfair Display', serif;
+}
+
+.container{
+    list-style: none;
+    font-size: 0px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.container a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgba(98, 98, 98, 255);
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+}
+
+.container li{
+    display: inline-block;
+}
+
+.container li:not(:last-child){
+    margin-right: 95px;
+}
+
+.festival, .coffee, .dream, .alps, .song, .winter{
+    display: inline-block;
+    width: 420px;
+    margin-bottom: 130px;
+}
+
+.song .winter{
+    padding-bottom: 0;
+}
+
+.main{
+    width: 900px;
+    margin: 0 auto;
+    font-size: 0;
+} 
+
+.photo{
+    width: 420px;
+    height: 280px;
+    margin-bottom: 32px;
+}
+
+.subtitle{
+    height: 11px;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 14px;
+    color: rgba(180, 173, 158, 255);
+    margin-bottom: 28px;
+}
+
+.title{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: rgba(98, 98, 98, 255);
+    margin-bottom: 39px;
+}
+
+.text{
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: rgba(98, 98, 98, 255);
+   /* margin-bottom: 130px;*/
+}
+
+.festival, .dream, .song {
+    margin-right: 60px;
+}
+
+.button{
+    padding: 22px 34px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 20px;
+    color: rgba(98, 98, 98, 255);
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 70px;
+}
