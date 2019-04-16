@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.main{
+    width: 1110px;
+    display: block;
+    margin: 0 auto;
+    font-size: 0px;
+}
+
+.header{
+    width: 1110px;
+    padding-bottom: 100px;
+    padding-top: 38px;
+    margin: 0 auto;
+}
+
+.container{
+    margin-bottom: 105px;
+}
+
+.logo{
+    width: 78px;
+    display: block;
+    float: left;
+    font-size: 30px;
+    font-weight: 300;
+    color: #0f0101;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.logo::first-letter{
+    color: #03A9F4;
+} 
+
+.menu{
+    display: block;
+    float: right;
+    margin-top: 8px;
+}
+
+ .link { 
+    font-weight: 700;
+    font-size: 14px; 
+    color: #0f0101;
+    text-decoration: none; 
+    text-transform: uppercase;
+    text-align: right;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif; 
+ } 
+
+.menu li{ 
+    display: inline-block;
+ }
+
+ .menu li:not(:last-child){
+    margin-right: 32px;
+ }
+
+ .menu li:hover a{
+     color:#1abc9c;
+ }
+
+ .clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.product-item{
+    display: block;
+    float: left;
+    width: 255px;
+    list-style: none;
+}
+
+.product-item:not(:nth-child(n+4)){
+    margin-bottom: 30px;
+}
+
+.product li:not(:nth-child(4n)){
+    margin-right: 30px;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.img{
+    width: 255px;
+    height: 322px;
+}
+
+.name{
+    float: left;
+    display: block;
+    width: 201px;
+    height: 40px;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px 30px 14px 14px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 255);
+}
+
+.p:hover .name{
+    background-color: #1abc9c;
+}
+
+.price{
+    float: right;
+    display: block;
+    width: 54px;
+    height: 40px;
+    padding: 12px;
+    background-color: gray;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 255);
+}
+
+.p:hover .price{
+    background-color: #7fd9c7;
+}
+
+.p{
+    float: left;
+}
+
+.title-1{
+    font-size: 48px;
+    color: rgba(81, 81, 81, 255);
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 92px;
+}
+
+.title-1::after{
+    content: "";
+    display: block;
+    background-color:  #1abc9c;
+    width: 164px;
+    height: 7px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.title-2{
+    font-size: 48px;
+    color: rgba(81, 81, 81, 255);
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 75px;
+}
+
+.title-2::after{
+    content: "";
+    display: block;
+    background-color:  #1abc9c;
+    width: 164px;
+    height: 7px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.image-2{
+    margin-bottom: 14px;
+}
+
+.text{
+    width: 301px;
+    font-size: 18px;
+    color: rgba(85, 82, 82, 255);
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    /* margin-bottom: 11px; */
+}
+
+.text::after{
+    content: "";
+    display: block;
+    background-color:  #1abc9c;
+    width: 136px;
+    height: 3px;
+    margin-top: 11px;
+    margin-bottom: 29px;
+}
+
+.text-2{
+    width: 335px;
+    font-size: 14px;
+    color: rgba(85, 82, 82, 255);
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 16px;
+}
+.article{
+    display: block;
+    float: left;
+    list-style: none;
+}
+
+.list-article li:not(:last-child){
+    margin-right: 30px;
+}
+
+.button{
+    float: left;
+    display: block;
+    background-color: #1abc9c;
+    color: white;
+    border: 0px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+    /* text-align: center; */
+    text-decoration: none;
+    padding: 18px 42px;
+}
+
+.container-2{
+    padding-bottom: 80px;
+}
+
+
+
