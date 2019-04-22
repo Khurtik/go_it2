@@ -5,6 +5,12 @@
     padding: 0;
     box-sizing: border-box;
 } 
+
+.clearfix::after{ 
+    content: "";
+    display: table;
+    clear: both;
+} 
  
 .header{
     width: 1110px;
@@ -37,11 +43,6 @@
      margin-top: 8px;
  }
 
- .clearfix::after{ 
-    content: "";
-    display: table;
-    clear: both;
-} 
 
 
  .link{
