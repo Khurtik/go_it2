@@ -1,0 +1,312 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../Fonts/montserrat-v13-latin-regular.woff2') format('woff2'), 
+         url('../Fonts/montserrat-v13-latin-regular.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../Fonts/montserrat-v13-latin-700.woff2') format('woff2'), 
+         url('../Fonts/montserrat-v13-latin-700.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../Fonts/roboto-v19-latin-300.woff2') format('woff2'), 
+         url('../Fonts/roboto-v19-latin-300.woff') format('woff'); 
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-image: url(../img/main-photo-desktop.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0 auto;
+    min-height: 66px;
+}
+
+.button-menu{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;  
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    width: 90px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: transparent;
+}
+
+.logo-link{
+    display: flex;
+    justify-content: center;
+    padding-top: 92px;
+    padding-bottom: 38px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navigation-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 139px;
+}
+
+.navigation-title{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    /* width: 276px; */
+}
+
+.navigation-subtitle{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: #ffffff;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+.navigation-button{
+    border: none;
+    border-radius: 25px;
+    background-color: #ff4e50;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #fff;
+    width: 280px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.container{
+    width: 322px;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+.team{
+    text-align: center;
+    padding-top: 68px;
+    padding-bottom: 64px;
+}
+
+.team-list{
+    list-style: none;
+    padding-bottom: 29px;
+}
+
+.person-info{
+    width: 194px;
+    margin: 0 auto;
+}
+
+img{
+    border-radius: 60px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.box-image{
+    position: relative;
+    width: 123px;
+    height: 123px;
+    margin: 0 auto;
+}
+
+.box-image::before{
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    width: 32px;
+    height: 32px;
+    content: "";
+    display: block;
+    /* background-size: cover; */
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 5px solid #ffffff;;
+    border-radius: 50px;
+}
+
+.bradley::before{
+    background-image: url(../img/icon-TV.png);
+}
+
+.lucas::before{
+    background-image: url(../img/icon-bottle.png);
+}
+
+.heather::before{
+    background-image: url(../img/icon-tea.png);
+}
+
+.hunter::before{
+    background-image: url(../img/icon-telegram.png);
+}
+
+
+.team-title{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    color: #333333;
+    padding-bottom: 14px;
+}
+
+.team-person{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #333333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about-person{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    color: #333333;
+    padding-bottom: 28px;
+}
+
+.team-button{
+    width: 280px;
+    height: 40px;
+    border: 2px solid #ff7d7e;
+    border-radius: 25px;
+    background-color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #ff7d7e;
+    cursor: pointer;
+}
+
+@media (min-width: 768px){
+    .container{
+        width: 660px;
+    }
+
+    .team-list{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 53px;
+    }
+
+    .logo-menu{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 96px;
+    }
+
+    .menu{
+        margin: 0;
+        min-height: 92px;
+    }
+
+    .navigation-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 114px;
+        padding-bottom: 234px;
+    }
+
+    .navigation-title{
+        width: 503px;
+        font-size: 52px;
+    }
+
+    .navigation-subtitle{
+        font-size: 24px;
+        padding-top: 40px;
+        padding-bottom: 34px;
+    }
+
+    .logo-link{
+        padding: 0;
+    }
+
+    .team-title{
+        padding-bottom: 30px;
+    }
+
+    .person-info{
+        width: 235px;
+    }
+
+    .bradley{
+        order: 1;
+    }
+
+    .heather{
+        order: 2;
+    }
+
+    .lucas{
+        order: 3;
+    }
+
+    .hunter{
+        order: 4;
+    }
+}
+
+@media (min-width: 950px){
+    .container{
+        width: 924px;
+    }
+
+    .team-list{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+}
