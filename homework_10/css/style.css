@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 100%;
+    min-height: 978px;
+    background-image: url(../img/Composed-layer@1X.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ICON{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-image: url(../img/Layer\ 16@1X.png)
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx){
+    .ICON{
+        background-image: url(../img/Layer\ 16@2X.png)
+    }
+}
