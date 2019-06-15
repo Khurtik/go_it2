@@ -54,6 +54,7 @@
     height: 36px;
     border-radius: 18px;
     background-color: transparent;
+    margin-bottom: 125px;
 }
 
 .logo-link{
@@ -81,6 +82,7 @@
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 38px;
 }
 
 .navigation-subtitle{
@@ -110,7 +112,6 @@
 }
 
 .container{
-    width: 322px;
     margin: 0 auto;
 }
 
@@ -221,7 +222,6 @@ img{
 
 @media (max-width: 767px){
    .menu{
-    display: flex;
     padding-top: 33px;
    }
 }
@@ -240,8 +240,6 @@ img{
     }
 
     .logo-menu{
-        display: flex;
-        flex-direction: row-reverse;
         min-height: 96px;
     }
 
@@ -250,13 +248,16 @@ img{
         min-height: 92px;
     }
 
+    .button-menu{
+        margin-bottom: 0;
+    }
+
     .navigation-info{
         padding-top: 114px;
         padding-bottom: 234px;
     }
 
     .navigation-title{
-        /* width: 503px; */
         font-size: 52px;
     }
 
@@ -273,36 +274,10 @@ img{
     .team-title{
         padding-bottom: 30px;
     }
-
-    /* .person-info{
-        width: 220px;
-    } */
-
-    /* .bradley{
-        order: 1;
-    }
-
-    .heather{
-        order: 2;
-    }
-
-    .lucas{
-        order: 3;
-    }
-
-    .hunter{
-        order: 4;
-    } */
 }
 
-@media (min-width: 950px){
+@media (min-width: 992px){
     .container{
-        width: 924px;
+        width: 960px;
     }
-
-    /* .team-list{
-        display: flex;
-        flex-wrap: nowrap;
-    } */
-
 }

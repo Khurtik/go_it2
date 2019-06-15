@@ -29,9 +29,9 @@ html {
   }
 }
 
-@media (min-width: 686px) {
+@media (min-width: 768px) {
   .container {
-    max-width: 672px;
+    max-width: 660px;
   }
 }
 
