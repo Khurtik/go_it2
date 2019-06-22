@@ -1,66 +1,539 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../Fonts/montserrat-v13-latin-regular.woff2') format('woff2'), 
+         url('../Fonts/montserrat-v13-latin-regular.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../Fonts/montserrat-v13-latin-700.woff2') format('woff2'), 
+         url('../Fonts/montserrat-v13-latin-700.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../Fonts/roboto-v19-latin-300.woff2') format('woff2'), 
+         url('../Fonts/roboto-v19-latin-300.woff') format('woff'); 
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../Fonts/roboto-v19-latin-300italic.woff2') format('woff2'), 
+         url('../Fonts/roboto-v19-latin-300italic.woff') format('woff'); 
+  }
+
+  @font-face {
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/kaushan-script-v7-latin-regular.woff2') format('woff2'),
+         url('../fonts/kaushan-script-v7-latin-regular.woff') format('woff');
+  } 
+        
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .wrapper{
     max-width: 100%;
     min-height: 978px;
-    background-image: url(../img/Composed-layer@1X.png);
+    background-image: url(../img/team-img/Composed-layer@1X.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background: linear-gradient(
+        to bottom,
+        /* rgba(232, 130, 131, 0.9) 0%,
+        rgba(240, 216, 137, 0.7) 100% */
+        rgba(243, 129, 129, 0.9) 0%,
+        rgba(252, 227, 138, 0.9) 100%
+      );
+}
+
+.list{
+    list-style: none;
+}
+
+.title{
+    font-size: 30px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.subtitle{
+    font-size: 24px;
+    font-family: 'Kaushan Script';
+    font-weight: normal;
+    text-align: center;
 }
 
 .navigation{
     width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+            align-items: center;
     min-height: 28px;
     margin: 0 auto;
 
 }
 
-.menu{
+.menu__list{
     width: 620px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    list-style: none;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+}
 
+.menu__link{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-transition: color 200ms linear;
+    -o-transition: color 200ms linear;
+    transition: color 200ms linear;
+}
+
+.menu__link::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #fce38a;
+    margin-top: 12px;
+    opacity: 0;
+}
+
+.menu__link:hover{
+    color: #fce38a;
+}
+
+.menu__link:hover::after{
+    color: #fce38a;
+    opacity: 1;
+}
+
+.menu__icon{
+    fill: #fff;
+}
+
+.menu__icon:hover{
+    fill: #fce38a;
+}
+
+.menu__icon--cart{
+    width: 18px;
+    height: 15px;
+}
+
+.menu__icon--glass{
+    width: 18px;
+    height: 18px;
+}
+
+.logo__link{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header__subtitle{
+    font-family: 'Kaushan Script';
+    font-weight: 400;
+    text-align: center;
+    font-size: 72px;
+    color: #fff;
+    margin-top: 164px;
+    margin-bottom: 42px;
 }
 
 .header__title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 150px;
+    text-align: center;
+    margin-bottom: 124px;
 }
 
 .header__button{
+    display: block;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
     padding: 14px 32px;
     border: 2px solid #ffffff;
     background-color: transparent;
     color:#ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 auto;
 }
 
-.icon{
+.service__subtitle{
+    margin-top: 30px;
+    margin-bottom: 22px;
+}
+
+.service-list__title{
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.service-list__text{
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.service__title::after{
     display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 0 auto;
+    margin-top: 28px;
+    margin-bottom: 48px;
+}
+
+.service-list{
+    width: 1140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.service-list__items:nth-child(-n+3){
+    margin-bottom: 66px;
+}
+
+.service-list__items{
+    -ms-flex-preferred-size: 320px;
+    flex-basis: 320px;
+padding-left: 60px;
+position: relative;
+}
+
+.service-list__items::before{
+    position: absolute;
     width: 32px;
     height: 32px;
-    fill: rgb(21, 24, 24);
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    background-size: cover;
+    background-position: center;
+}
+
+.service-list__items--photo::before{
+    background-image: url(../img/service-icons/icon-photography.png);
+}
+
+.service-list__items--web::before{
+
+    background-image: url(../img/service-icons/icon-web.png);
+}
+
+.service-list__items--create::before{
+    background-image: url(../img/service-icons/icon-creativity.png);
+}
+
+.service-list__items--seo::before{
+    background-image: url(../img/service-icons/icon-seo.png);
+}
+
+.service-list__items--css::before{
+    background-image: url(../img/service-icons/icon-css.png);
+}
+
+.service-list__items--digital::before{
+    background-image: url(../img/service-icons/icon-digital.png);
+}
+
+.team__subtitle{
+    margin-top: 92px;
+    margin-bottom: 22px;
+}
+
+.team__title::after{
+    display: block;
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 30px;
+}
+
+.team__text{
+    width: 950px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto 90px;
+}
+
+.team-items{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    list-style: none;
+}
+
+.team-items__participant{
+    width: 383px;
+    position: relative;
+}
+
+.team-items__img--shadow{
+    position: absolute;
+    width: 100%;
+    height: 473px;
+    opacity: 0;
+    background: -webkit-gradient(
+        linear,
+        left top, left bottom,
+        from(rgba(252, 227, 138, 0.9)),
+        to(rgba(243, 129, 129, 0.9))
+      );
+    background: -webkit-linear-gradient(
+        top,
+        rgba(252, 227, 138, 0.9) 0%,
+        rgba(243, 129, 129, 0.9) 100%
+      );
+    background: -o-linear-gradient(
+        top,
+        rgba(252, 227, 138, 0.9) 0%,
+        rgba(243, 129, 129, 0.9) 100%
+      );
+    background: linear-gradient(
+        to bottom,
+        rgba(252, 227, 138, 0.9) 0%,
+        rgba(243, 129, 129, 0.9) 100%
+      );
+    -webkit-transition: -webkit-transform 200ms linear, -webkit-box-shadow 200ms linear;
+    transition: -webkit-transform 200ms linear, -webkit-box-shadow 200ms linear;
+    -o-transition: transform 200ms linear, box-shadow 200ms linear;
+    transition: transform 200ms linear, box-shadow 200ms linear;
+    transition: transform 200ms linear, box-shadow 200ms linear, -webkit-transform 200ms linear, -webkit-box-shadow 200ms linear;
+}
+
+.team-items__list-icon{
+    width: 224px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    list-style: none;
+    position: absolute;
+}
+
+.team-items__icon{
+    width: 56px;
+    height: 56px;
+    background-color:#fce38a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid #f9bd87;
+}
+
+.team-items__icon-svg{
+    fill: #f38181;
+    list-style: none;
+}
+
+.team-items__icon-svg--facebook{
+    width: 18px;
+    height: 26px;
+}
+
+.team-items__icon-svg--twitter{
+    width: 26px;
+    height: 22px;
+}
+
+.team-items__icon-svg--pinterest{
+    width: 21px;
+    height: 26px;
+}
+
+.team-items__icon-svg--instagram{
+    width: 26px;
+    height: 26px;
+}
+
+.team-items__participant:hover .team-items__img--shadow{
+    opacity: 1;
+    -webkit-box-shadow: 9px 9px 0  rgba(149, 225, 211, 1);
+            box-shadow: 9px 9px 0  rgba(149, 225, 211, 1);
+    -webkit-transform: translate(-9px,-9px);
+        -ms-transform: translate(-9px,-9px);
+            transform: translate(-9px,-9px);
+}
+
+.team-items__icon:hover .team-items__icon-svg {
+    fill: #fff;
+}
+
+.team__name, .team__prof{
+    text-align: center;
+}
+
+.team__name{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.team__prof{
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+}
+
+.footer__container{
+    width: 1203px;
+    height: 62px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+}
+
+.footer::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    display: block;
+    margin-top: 82px;
+}
+
+.footer__copy--link{
+    color: #f38181;
+}
+
+.footer__copy{
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+.subscribe__form {
+    width: 230px;
+    border: 1px solid #e0e0e0;    
+    outline: none;
+    padding: 14px 12px 13px 12px;    
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;     
+    color:#e0e0e0;  
+}
+
+.subscribe__submit{
+    padding: 14px 32px;
+    background-color: #95e1d3;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
 }
 
 
-
-
-
-
-
-
-
-@media (min-resolution: 192dpi), (min-resolution: 2dppx){
+@media  (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx){
     .wrapper{
-        background-image: url(../img/Composed-layer@2X.png)
+        background-image: url(../img/team-img/Composed-layer@2X.png)
+    }
+
+    .service-list__items--photo::before{
+        background-image: url(../img/service-icons/icon-photography@2X.png);
+    }
+    
+    .service-list__items--web::before{
+    
+        background-image: url(../img/service-icons/icon-web@2X.png);
+    }
+    
+    .service-list__items--create::before{
+        background-image: url(../img/service-icons/icon-creativity@2X.png);
+    }
+    
+    .service-list__items--seo::before{
+        background-image: url(../img/service-icons/icon-seo@2X.png);
+    }
+    
+    .service-list__items--css::before{
+        background-image: url(../img/service-icons/icon-css@2X.png);
+    }
+    
+    .service-list__items--digital::before{
+        background-image: url(../img/service-icons/icon-digital@2X.png);
     }
 }
